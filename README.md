@@ -1,37 +1,8 @@
-# DecodeLabs AI Internship - Project 2: Data Classification using AI
-
-![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat&logo=python)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0+-orange?style=flat&logo=scikit-learn)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat)
-![Accuracy](https://img.shields.io/badge/Accuracy-96.67%25-success?style=flat)
-
----
+# DecodeLabs Internship - Project 2: Data Classification using AI
 
 ## 📌 Project Overview
 
-This project implements a **supervised machine learning pipeline** to classify Iris flowers into three species — *Setosa*, *Versicolor*, and *Virginica* — using the **K-Nearest Neighbors (KNN)** algorithm. It is the second milestone in the DecodeLabs AI Industrial Training program and serves as an introduction to the core concepts of data classification, model training, and evaluation.
-
----
-
-## 🎯 Objectives
-
-- Load and explore a real-world benchmark dataset
-- Apply feature scaling to prepare data for a distance-based algorithm
-- Split data into training and testing sets to ensure unbiased evaluation
-- Train a KNN classifier and tune the hyperparameter K using the Elbow Method
-- Evaluate model performance using a Confusion Matrix and F1 Score
-
----
-
-## 🗂️ Project Structure
-
-```
-DecodeLabs_Project2/
-│
-├── iris_classifier.py      # Main Python script (full pipeline)
-├── iris_knn_results.png    # Output visualization (elbow, confusion matrix, features)
-└── README.md               # Project documentation
-```
+This project implements a **supervised machine learning pipeline** to classify Iris flowers into three species - *Setosa*, *Versicolor*, and *Virginica* using the **K-Nearest Neighbors (KNN)** algorithm. This project serves as an introduction to the core concepts of data classification, model training, and evaluation.
 
 ---
 
@@ -127,10 +98,3 @@ python iris_classifier.py
 
 ---
 
-## 💡 Key Learnings
-
-- **Why scaling matters for KNN:** Without `StandardScaler`, features with larger ranges (e.g., sepal length in cm) would dominate the distance calculation over smaller-range features, introducing bias into predictions.
-- **Why accuracy can be misleading:** On imbalanced datasets, a model predicting the majority class always gets high accuracy. F1 Score corrects for this.
-- **Why we stratify the split:** To ensure each class is proportionally represented in both training and test sets, preventing skewed evaluation.
-
----
